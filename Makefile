@@ -2,7 +2,7 @@
 ### Hooks for the editor to set the default target
 current: target
 
-target pngtarget pdftarget vtarget acrtarget: notarget
+target pngtarget pdftarget vtarget acrtarget: lecture.draft.pdf 
 
 ##################################################################
 
@@ -17,6 +17,13 @@ include stuff.mk
 
 ## Content
 
+Sources += lecture.txt
+
+lecture.draft.pdf: lecture.txt
+
+now:
+	cat $(ms)/talk.mk
+
 ######################################################################
 
 ### Makestuff
@@ -28,4 +35,5 @@ include stuff.mk
 -include $(ms)/visual.mk
 
 # -include $(ms)/wrapR.mk
-# -include $(ms)/oldlatex.mk
+-include $(ms)/newlatex.mk
+-include $(ms)/talk.mk

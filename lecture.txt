@@ -1,0 +1,70 @@
+
+Advancing real time outbreak analysis
+
+\vfill
+
+Jonathan Dushoff, McMaster University
+
+\url{http://lalashan.mcmaster.ca/DushoffLab}
+
+\vfill
+
+EDCTP-TDR-CIHR 
+
+Noguchi Memorial Institute of Medical Research (NMIMR); University of Ghana School of Public Health
+
+February 2016 
+
+\vfill
+
+----------------------------------------------------------------------
+
+TSEC Dynamic modeling
+
+SUBH Connects scales
+
+BC
+
+COLFIG images/ebola_ward.jpg
+
+NC
+
+COLFIG WHO/liberia150429.npc.tsplot.Rout-3.pdf
+
+EC
+
+----------------------------------------------------------------------
+BC
+
+ADD Measles
+
+NC
+
+ADD Ebola ward
+
+EC
+
+----------------------------------------------------------------------
+
+Dynamic modeling and Ebola
+
+----------------------------------------------------------------------
+
+Our early work (you can't tell!)
+
+----------------------------------------------------------------------
+
+Strength and speed
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+----------------------------------------------------------------------
+
+Reporting, response and behaviour
+
+----------------------------------------------------------------------
+
+Tools and pipelines
+
