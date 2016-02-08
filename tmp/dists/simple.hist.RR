@@ -1,0 +1,16 @@
+load('simple.RData')
+pdf("simple.hist.Rout.pdf")
+# End RR preface
+# Global Environment: simple.RData
+
+# Scripts: hist.R
+
+print(hist(dgen
+	, 	probability=TRUE
+	, main=dname
+	, xlab="Generation interval"
+))
+
+# Begin RR postscript
+# If you see this in an R log, your R script did not close properly
+save.image(file="simple.hist.RData")

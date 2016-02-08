@@ -1,0 +1,23 @@
+load('lognormal.RData')
+load('newfun.RData')
+pdf("newtest.Rout.pdf")
+# End RR preface
+# Global Environment: lognormal.RData newfun.RData
+
+# Scripts: filtered.R
+
+dgen <- dgen[dgen<=40]
+funhist(dgen, expfun, finv=logfun, parms=list(Tc=15))
+funhist(dgen, expfun, finv=logfun, parms=list(Tc=30))
+funhist(dgen, expfun, finv=logfun, parms=list(Tc=45))
+
+funhist(dgen, logfun, finv=expfun, parms=list(Tc=-1), means=FALSE)
+funhist(dgen, logfun, finv=expfun, parms=list(Tc=-1))
+funhist(dgen, recip, finv=recip)
+funhist(dgen, idfun, finv=idfun)
+funhist(dgen, sqfun, finv=rootfun)
+
+
+# Begin RR postscript
+# If you see this in an R log, your R script did not close properly
+save.image(file="newtest.RData")

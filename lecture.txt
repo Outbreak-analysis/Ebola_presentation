@@ -19,7 +19,7 @@ February 2016
 
 ----------------------------------------------------------------------
 
-TSEC Dynamic modeling
+Dynamic modeling
 
 SUBH Connects scales
 
@@ -35,31 +35,334 @@ EC
 
 ----------------------------------------------------------------------
 
-(Bridging in both directions)
+Yellow fever in Panama
+
+BC
+
+COLFIG tmp/endemic.Rout-0.png
+
+NC
+
+COLFIG tmp/aedes.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+2009 pandemic Alberta
+
+HIGHFIG tmp/flu_alberta.jpg
 
 ----------------------------------------------------------------------
 
 Dynamic modeling and Ebola
 
-CDC stuff ... pictures like the one we have already?
+COLFIG WHO/liberia150429.npc.tsplot.Rout-3.pdf
 
 ----------------------------------------------------------------------
 
-Our early work (you can't tell!)
+Standard disease model 
+
+SCALEFIG 0.8 tmp/seir.four.pdf
 
 ----------------------------------------------------------------------
 
-Strength and speed
+Disease model including post-death transmission
+
+SCALEFIG 0.8 tmp/seird.four.pdf
+
+----------------------------------------------------------------------
+
+Disease model including post-death transmission
+
+SCALEFIG 0.8 tmp/brides.four.pdf
+
+----------------------------------------------------------------------
+
+Scenarios
+
+FIG tmp/weitz_full.pdf
+
+----------------------------------------------------------------------
+
+BC
+
+COLFIG tmp/weitz_full.pdf
+
+NC
+
+	Different assumptions produce identical fits
+
+	More after-death transmission $\Rightarrow$
+
+		Higher \Ro
+
+		Larger epidemics
+
+		Larger importance of safe burials
+
+EC
+	
+----------------------------------------------------------------------
+
+Subclinical infection
+
+	Does Ebola virus produce subclinical infection?
+
+		Infection that does not present as Ebola virus disease
+
+	Can subclinically infected individuals pass infection to others?
+
+	Is subclinical infection immunizing?
+
+	What are the dynamic effects?
+
+----------------------------------------------------------------------
+
+Subclinical infection dynamics
+
+SCALEFIG 0.85 tmp/sims/base.tsplots.Rout-0.png
+
+----------------------------------------------------------------------
+
+Subclinical infection dynamics
+
+BC
+
+SCALEFIG 0.85 tmp/sims/base.tsplots.Rout-0.png
+
+NC
+
+	Effects visible late in epidemic
+
+	Or in future epidemics
+
+EC
+
+----------------------------------------------------------------------
+
+How do we measure invading epidemics?
+
+	Strength
+
+	Speed
+
+	Danger
+
+----------------------------------------------------------------------
+
+How do we measure invading epidemics?
+
+	Strength -- $\Rx$
+
+	Speed -- $r$
+
+	Danger -- $\alpha$
+
+----------------------------------------------------------------------
+
+Life cycle
+
+BC
+
+	The link between $r$ and $\Rx$ is the generation distribution $G$
+
+		Interval between ``index'' infection and resulting infection
+
+	What is the effect of a fast $G$?
+
+		It depends!
+
+NC
+
+SCALEFIG 0.8 tmp/dists/gamHist.Rout-4.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Generations and \Rx
+
+WIDEFIG steps.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Generations and \Rx
+
+WIDEFIG steps.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Strength vs.\ speed
+
+BC
+
+SCALEFIG 0.8 tmp/dists/gamHist.Rout-0.pdf
+
+NC
+
+SCALEFIG 0.8 tmp/dists/gamHist.Rout-1.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Strength vs.\ speed
+
+BC
+
+SCALEFIG 0.8 tmp/dists/gamHist.Rout-2.pdf
+
+NC
+
+SCALEFIG 0.8 tmp/dists/gamHist.Rout-3.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Strength vs.\ speed
+
+BC
+
+SCALEFIG 0.8 tmp/dists/gamHist.Rout-4.pdf
+
+NC
+
+SCALEFIG 0.8 tmp/dists/gamHist.Rout-5.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Strength vs.\ speed
+
+BC
+
+SCALEFIG 0.8 tmp/dists/gamHist.Rout-6.pdf
+
+NC
+
+SCALEFIG 0.8 tmp/dists/gamHist.Rout-7.pdf
+
+EC
+
+----------------------------------------------------------------------
+
+Fitting to Ebola
+
+FIG tmp/dists/lognormal.curve.Rout.pdf
+
+----------------------------------------------------------------------
+
+
+Assessing and reporting uncertainty
+
+FIG tmp/T34.NIH.compare-2.pdf
 
 ----------------------------------------------------------------------
 
 Assessing and reporting uncertainty
 
+FIG tmp/T34.NIH.compare-3.pdf
+
 ----------------------------------------------------------------------
 
 Reporting, response and behaviour
 
+	What are the factors that contribute to uncertainty?
+
+	What do we need to
+	
+		\emph{measure}
+
+		\emph{model}
+
+	to reduce uncertainty?
+
+----------------------------------------------------------------------
+
+Reporting process
+
+	How does case ascertainment and communication change as a disease spreads?
+
+	How do these changes affect the public?
+
+----------------------------------------------------------------------
+
+Behaviour change
+
+BC
+
+HIGHFIG images/burial_team.jpg
+
+NC
+
+COLFIG images/linked.crop.jpg
+
+EC
+
+----------------------------------------------------------------------
+
+Behaviour change
+
+	How do we measure behaviour change?
+
+	How do we predict behaviour change?
+
 ----------------------------------------------------------------------
 
 Tools and pipelines
+
+WIDEFIG images/wrenches.jpg
+
+----------------------------------------------------------------------
+
+Tools and pipelines
+
+BC
+
+COLFIG images/wrenches.jpg
+
+NC
+
+	Reproducible
+
+	Pipelined
+
+	Documented
+
+	Open source
+
+EC
+
+----------------------------------------------------------------------
+
+Vaccination trials: ethics and practice
+
+WIDEFIG tmp/swct_scenario.jpg
+
+----------------------------------------------------------------------
+
+Vaccine trials
+
+HIGHFIG tmp/swct_sims.jpg
+
+----------------------------------------------------------------------
+
+Vaccine trials
+
+HIGHFIG tmp/swct_results.jpg
+
+----------------------------------------------------------------------
+
+Thanks
+
+	Organizers
+
+	Audience
+
+	Collaborators: Steve Bellan, David Champredon, Joshua Weitz
+
+	Funders: CIHR, NSERC
 

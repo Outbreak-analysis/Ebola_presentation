@@ -1,0 +1,10 @@
+> # Global Environment: lognormal.RData funhist.RData
+> 
+> # Scripts: filtered.R
+> 
+> funhist(gen, logfun, finv=expfun, parms=list(Tc=-1))
+> funhist(gen, recip, finv=recip)
+> funhist(gen, expfun, finv=logfun, parms=list(Tc=20))
+> funhist(gen, expfun, finv=logfun, parms=list(Tc=40))
+> 
+> 

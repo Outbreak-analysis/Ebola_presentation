@@ -1,0 +1,45 @@
+current: target
+
+target: lognormal.filtered.Rout 
+
+pngtarget: lognormal.filtered.Rout 
+	$(MAKE) $<.png
+	$(MAKE) $<.png.go
+
+pdftarget: lognormal.filtered.Rout 
+	$(MAKE) $<.pdf
+	$(MAKE) $<.pdf.go
+
+vtarget: lognormal.filtered.Rout 
+	$(MAKE) $<.go
+
+##################################################################
+
+SUPPRESS_EMPTY_ROUT_RULE=1
+
+WW_THIS_PROJECT_SOURCE_FILES += data.R
+
+exponential.Rout: lognormal.Rout
+
+exponential.filtered.Rout: exponential.R
+
+contour.Rout: contour.R
+
+condition.Rout: condition.R
+
+test.Rout: test.R
+
+lognormal.filtered.Rout: funhist.R
+
+%.filtered.Rout: %.Rout funhist.Rout filtered.R
+	$(run-R)
+
+newtest.Rout: lognormal.Rout newfun.Rout filtered.R
+	$(run-R)
+
+##################################################################
+
+%.go:
+	$(MAKE) $*
+	xdg-open $* &
+

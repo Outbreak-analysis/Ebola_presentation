@@ -11,11 +11,20 @@ target pngtarget pdftarget vtarget acrtarget: lecture.draft.pdf
 
 Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
 include stuff.mk
+-include $(ms)/os.mk
 # include $(ms)/perl.def
 
 ##################################################################
 
+## Temporary
+
+Sources += $(wildcard tmp/*)
+
+##################################################################
+
 ## Content
+
+format_files = beamer.tmp beamer.fmt
 
 Sources += lecture.txt
 
@@ -26,14 +35,21 @@ now:
 
 ######################################################################
 
-### Makestuff
+## Local pix
 
-## Change this name to download a new version of the makestuff directory
-# Makefile: start.makestuff
+Sources += $(wildcard *.R)
+
+# TEMPORARY crib rule
+tmp/%: /home/dushoff/Dropbox/academicWW/Ebola_math/%
+	$(copy)
+
+steps.Rout: steps.R
+
+### Makestuff
 
 -include $(ms)/git.mk
 -include $(ms)/visual.mk
 
-# -include $(ms)/wrapR.mk
+-include $(ms)/wrapR.mk
 -include $(ms)/newlatex.mk
 -include $(ms)/talk.mk

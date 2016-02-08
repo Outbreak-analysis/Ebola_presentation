@@ -1,0 +1,28 @@
+load('base.RData')
+load('functions.RData')
+pdf("base.sim.Rout.pdf")
+# End RR preface
+# Global Environment: base.RData functions.RData
+
+# Scripts: sim.R
+
+library(deSolve) 
+
+symPars <- makePars(base, R0, 1)
+asymPars <- makePars(base, R0, sympProp)
+
+print(symPars)
+print(asymPars)
+
+symsim <- runModel(init1, days, symPars)
+symsim$Symptomatic <- paste(round(100*symPars['symp']), "%", sep="")
+
+asymsim <- runModel(init1, days, asymPars)
+asymsim$Symptomatic <- paste(round(100*asymPars['symp']), "%", sep="")
+
+sims <- rbind(symsim, asymsim)
+print(summary(sims))
+
+# Begin RR postscript
+# If you see this in an R log, your R script did not close properly
+save.image(file="base.sim.RData")

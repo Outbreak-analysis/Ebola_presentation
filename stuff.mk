@@ -9,16 +9,29 @@ export ms = $(gitroot)/makestuff
 
 ### Linked directories
 
+## Talk machinery
+
 talkdir = $(ms)/talk
 subdirs += talkdir
+
+## Images
 
 images = $(Drop)/courses/Lecture_images
 subdirs += images
 
+## Data
+
 WHO = $(gitroot)/WA_Ebola_Outbreak/
 subdirs += WHO
 
--include $(ms)/os.mk
+## Diagrams
+
+sir = $(gitroot)/SIR_model_family
+subdirs += sir
+sir/%:
+	cd sir && $(MAKE) $*
+
+## Project directory machinery
 
 Makefile: $(ms) $(subdirs)
 

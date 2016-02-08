@@ -1,0 +1,22 @@
+pdf("gamma.Rout.pdf")
+# End RR preface
+# Scripts: gamma.R
+
+
+gbar <- mean(gen)
+
+gamshape <- gbar^2/var(gen)
+
+gamgen <- qgamma(q, scale=gbar/gamshape, shape=gamshape)
+
+print(mean(gamgen))
+
+print(sd(gamgen))
+
+dname <- "Single-gamma approximation"
+dgen <- gamgen
+
+
+# Begin RR postscript
+# If you see this in an R log, your R script did not close properly
+save.image(file="gamma.RData")

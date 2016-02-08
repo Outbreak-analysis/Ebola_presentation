@@ -1,0 +1,22 @@
+> # Global Environment: lognormal.RData
+> 
+> # Scripts: gamma.R
+> 
+> 
+> gbar <- mean(gen)
+> 
+> gamshape <- gbar^2/var(gen)
+> 
+> gamgen <- qgamma(q, scale=gbar/gamshape, shape=gamshape)
+> 
+> print(mean(gamgen))
+[1] 15.43003
+> 
+> print(sd(gamgen))
+[1] 9.540384
+> 
+> dname <- "Single-gamma approximation"
+> dgen <- gamgen
+> 
+> 
+> 

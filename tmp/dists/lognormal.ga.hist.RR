@@ -1,0 +1,16 @@
+load('lognormal.ga.RData')
+pdf("lognormal.ga.hist.Rout.pdf")
+# End RR preface
+# Global Environment: lognormal.ga.RData
+
+# Scripts: hist.R
+
+print(hist(dgen
+	, 	probability=TRUE
+	, main=dname
+	, xlab="Generation interval"
+))
+
+# Begin RR postscript
+# If you see this in an R log, your R script did not close properly
+save.image(file="lognormal.ga.hist.RData")
