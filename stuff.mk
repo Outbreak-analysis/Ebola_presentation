@@ -21,8 +21,10 @@ subdirs += images
 
 ## Data
 
-WHO = $(gitroot)/WA_Ebola_Outbreak/
+WHO = $(gitroot)/WA_Ebola_Outbreak
 subdirs += WHO
+WHO/%:
+	cd WHO && $(MAKE) $*
 
 ## Diagrams
 

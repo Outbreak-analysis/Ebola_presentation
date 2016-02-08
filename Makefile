@@ -26,12 +26,11 @@ Sources += $(wildcard tmp/*)
 
 format_files = beamer.tmp beamer.fmt
 
-Sources += lecture.txt
+Sources += $(wildcard *.txt)
 
 lecture.draft.pdf: lecture.txt
 
-now:
-	cat $(ms)/talk.mk
+todo.txt:
 
 ######################################################################
 
