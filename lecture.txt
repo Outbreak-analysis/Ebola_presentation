@@ -34,19 +34,14 @@ COLFIG WHO/liberia150429.npc.tsplot.Rout-3.pdf
 EC
 
 ----------------------------------------------------------------------
-BC
 
-ADD Measles
-
-NC
-
-ADD Ebola ward
-
-EC
+(Bridging in both directions)
 
 ----------------------------------------------------------------------
 
 Dynamic modeling and Ebola
+
+CDC stuff ... pictures like the one we have already?
 
 ----------------------------------------------------------------------
 
