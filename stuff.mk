@@ -6,6 +6,7 @@ Drop = ~/Dropbox
 -include local.mk
 -include $(gitroot)/local.mk
 export ms = $(gitroot)/makestuff
+-include $(ms)/os.mk
 
 ### Linked directories
 
@@ -32,6 +33,13 @@ sir = $(gitroot)/SIR_model_family
 subdirs += sir
 sir/%:
 	cd sir && $(MAKE) $*
+
+## Hybrid fitting
+
+hybrid = $(gitroot)/hybrid_fitting
+subdirs += hybrid
+hybrid/%:
+	cd hybrid && $(MAKE) $*
 
 ## Project directory machinery
 

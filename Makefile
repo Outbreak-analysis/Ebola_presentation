@@ -6,12 +6,10 @@ target pngtarget pdftarget vtarget acrtarget: lecture.draft.pdf
 
 ##################################################################
 
-
 # make files
 
 Sources = Makefile .gitignore README.md stuff.mk LICENSE.md
 include stuff.mk
--include $(ms)/os.mk
 # include $(ms)/perl.def
 
 ##################################################################

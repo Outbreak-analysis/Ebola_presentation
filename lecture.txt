@@ -19,6 +19,10 @@ February 2016
 
 ----------------------------------------------------------------------
 
+FIG images/clock.jpg
+
+----------------------------------------------------------------------
+
 Dynamic modeling
 
 SUBH Connects scales
@@ -55,7 +59,25 @@ HIGHFIG tmp/flu_alberta.jpg
 
 ----------------------------------------------------------------------
 
-Dynamic modeling and Ebola
+Goals
+
+	Quickly make \emph{transparent} predictions
+
+		Including responses to intervention scenarios
+
+	Be \emph{realistic} about uncertainty
+
+		Investigate how uncertainty can be reduces
+
+	Be \emph{open} about calculations
+
+		And open to people who want to use our machinery but change our
+		assumptions
+
+
+----------------------------------------------------------------------
+
+The CDC and the West African outbreak
 
 COLFIG WHO/liberia150429.npc.tsplot.Rout-3.pdf
 
@@ -255,14 +277,49 @@ FIG tmp/dists/lognormal.curve.Rout.pdf
 
 ----------------------------------------------------------------------
 
-
 Assessing and reporting uncertainty
 
-FIG tmp/T34.NIH.compare-2.pdf
+FIG hybrid/liberia.hybrid.compare.Rout-0.pdf
 
 ----------------------------------------------------------------------
 
 Assessing and reporting uncertainty
+
+FIG hybrid/liberia.hybrid.compare.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/liberia.hybrid.compare.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/liberia.narrhy.compare.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/liberia.narrhy.compare.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/liberia.narrhy.compare.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/liberia.narrhy.compare.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Validating on test data
 
 FIG tmp/T34.NIH.compare-3.pdf
 
