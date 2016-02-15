@@ -277,51 +277,51 @@ FIG tmp/dists/lognormal.curve.Rout.pdf
 
 ----------------------------------------------------------------------
 
-Assessing and reporting uncertainty
-
-FIG hybrid/liberia.hybrid.compare.Rout-0.pdf
-
-----------------------------------------------------------------------
-
-Assessing and reporting uncertainty
-
-FIG hybrid/liberia.hybrid.compare.Rout-1.pdf
-
-----------------------------------------------------------------------
-
-Assessing and reporting uncertainty
-
-FIG hybrid/liberia.hybrid.compare.Rout-2.pdf
-
-----------------------------------------------------------------------
-
-Assessing and reporting uncertainty
-
-FIG hybrid/liberia.narrhy.compare.Rout-0.pdf
-
-----------------------------------------------------------------------
-
-Assessing and reporting uncertainty
-
-FIG hybrid/liberia.narrhy.compare.Rout-1.pdf
-
-----------------------------------------------------------------------
-
-Assessing and reporting uncertainty
-
-FIG hybrid/liberia.narrhy.compare.Rout-2.pdf
-
-----------------------------------------------------------------------
-
-Assessing and reporting uncertainty
-
-FIG hybrid/liberia.narrhy.compare.Rout-3.pdf
-
-----------------------------------------------------------------------
-
-Validating on test data
+NIH Ebola Contest
 
 FIG tmp/T34.NIH.compare-3.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/sierraLeone.hybrid.compare.Rout-0.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/sierraLeone.hybrid.compare.Rout-1.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/sierraLeone.hybrid.compare.Rout-2.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/sierraLeone.hybrid.compare.Rout-3.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/sierraLeone.hybrid.compare.Rout-4.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/sierraLeone.hybrid.compare.Rout-5.pdf
+
+----------------------------------------------------------------------
+
+Assessing and reporting uncertainty
+
+FIG hybrid/sierraLeone.hybrid.compare.Rout-6.pdf
 
 ----------------------------------------------------------------------
 
