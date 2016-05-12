@@ -14,13 +14,11 @@ include stuff.mk
 
 ##################################################################
 
-## Temporary
-
-Sources += $(wildcard tmp/*)
-
-##################################################################
-
 ## Content
+
+Archives += $(wildcard *.lecture.pdf)
+%.lecture.pdf: lecture.draft.pdf
+	$(copy)
 
 format_files = beamer.tmp beamer.fmt
 
