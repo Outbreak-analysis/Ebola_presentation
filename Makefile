@@ -16,10 +16,6 @@ include stuff.mk
 
 ## Content
 
-Archives += $(wildcard *.lecture.pdf)
-%.lecture.pdf: lecture.draft.pdf
-	$(copy)
-
 format_files = beamer.tmp beamer.fmt
 
 Sources += $(wildcard *.txt)
@@ -27,6 +23,10 @@ Sources += $(wildcard *.txt)
 lecture.draft.pdf: lecture.txt
 
 todo.txt:
+
+Archive += $(wildcard *.lecture.pdf)
+%.lecture.pdf: lecture.draft.pdf
+	$(copy)
 
 ######################################################################
 
